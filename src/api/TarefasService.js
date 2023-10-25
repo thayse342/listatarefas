@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000/tarefas";
+const BASE_URL = "https://listabackend.vercel.app/tarefas";
+
 
 export class TarefasService{
     static criarTarefa(body){
