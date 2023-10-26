@@ -10,6 +10,7 @@ export default function Tarefas({ id_tarefa, descricao, concluido }) {
   const apagarTarefa = async () => {
     const { status } = await TarefasService.apagarTarefa(id_tarefa);
     if (status === 200) {
+      location.reload();
       // Atualize o estado local ou a lógica apropriada aqui em vez de recarregar a página
       // setIsDeleted(true);
     } else {
